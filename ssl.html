@@ -6,10 +6,12 @@
 </head>
 <body>
 	<nav>
-		<a href="Info-Praesi_index.html" class="logo">
-					Sicherheit
-		</a>
 		<ul>
+			<li>
+				<a href="Info-Praesi_index.html" class="logo">
+					<img src="bilder/Praesentation_Icon.png" width="60">
+				</a>
+			</li>
 			<li class="active">
 				<a href="ssl.html">
 					SSL
@@ -44,17 +46,273 @@
 			</li>
 		</ul>
 	</nav>
-		<br>
-		<img src="SSL_Leiste.png" class="distance">
-		<br>
-		<div class="distance background-color">
-			<p>Erkennungsmerkmale: https:// , das Schlosssymbol</p>
-			<br>
-			<ul class="distance">
-				<li>Sicherheitstechnologiestandard</li>
-				<li>sofort und automatisch</li>
-				<li>erstellt eine verschlüsselte Verbindung zwischen einem Webserver und einem Browser</li>
-			</ul>
-		</div>
+	<br>
+	<img class="card" src="bilder/Safari_Schloss.png">
+	<img class="card" width="93%" src="Bilder/Google_Zertifikat.png">
+	<img class="card" width="93%" src="Bilder/Zertifikat_Google-2.png">
+	<p class="card font">Aber was ist so'n Zertifikat?</p>
+	<table class="card font">
+		<tr>
+			<td></td>
+			<td width="30%" style="padding: 20px;">
+				<img src="bilder/Zertifikat.png" class="center" width="50%">
+			</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td width="30%" style="padding: 20px;">
+				<img src="bilder/Runter_Pfeil.png" class="center" width="25%">
+			</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td width="30%" style="padding: 20px;">
+				<img src="bilder/Web_ID.png" class="center" width="50%">
+			</td>
+			<td width="30%" style="padding: 20px;">
+				<img src="bilder/Public_Key.png" class="center" width="50%">
+			</td>
+			<td width="30%" style="padding: 20px;">
+				<img src="bilder/Signature.png" class="center" width="50%">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p class="Font">Identifikation</p>
+			</td>
+			<td>
+				<p class="Font">Public Key</p>
+			</td>
+			<td>
+				<p class="Font">Signature</p>
+			</td>
+		</tr>
+	</table>
+	<p class="card font">Aber was ist so'n Key?</p>
+	<table class="card font">
+		<tr>
+			<td  width="50%" style="padding: 20px;">
+				<img src="bilder/Public_Key.png" class="center" width="50%">
+				<p class="font"  width="30%" style="padding-bottom: 20px;">Public Key</p>
+			<td width="50%" style="padding: 20px;">
+				<ul class="font" style="text-align: left;">
+					<li>Jeder hat Zugriff auf den <b>Public Key</b></li>
+					<li>(...)</li>
+				</ul>
+			</td>
+		</tr>
+	</table>
+	<table class="card font">
+		<tr>
+			<td  width="50%" style="padding: 20px;">
+				<img src="bilder/Private_Key.png" class="center" width="50%">
+				<p class="font"  width="30%" style="padding-bottom: 20px;">Private Key</p>
+			<td width="50%" style="padding: 20px;">
+				<ul class="font" style="text-align: left;">
+					<li>Nur der User hat Zugriff auf den <b>Private Key</b></li>
+					<li>(...)</li>
+				</ul>
+			</td>
+		</tr>
+	</table>
+	<table class="card font">
+		<tr>
+			<td>
+				<table>
+					<tr>
+						<td width="30%" style="padding: 20px;">
+							<img src="bilder/Public_Key.png" class="center" width="50%">
+						</td>
+						<td width="30%" style="padding: 20px;">
+							<img src="Bilder/Rechts_Pfeil.png" class="center" width="25%">
+							<img src="Bilder/Links_Pfeil.png" class="center" width="25%">
+						</td>
+						<td  width="30%" style="padding: 20px;">
+							<img src="bilder/Private_Key.png" class="center" width="50%">
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td>Beidseitig verschlüsselt</td>
+		</tr>
+	</table>
+	<p class="card font">Alles was der Private Key verschlüsselt kann nur vom Public Key entschlüsselt werden und umgekehrt.</p>
+	<p class="card font">Von wem wird das Zertifikat unterschrieben?</p>
+	<table class="card font">
+		<tr>
+			<td  width="50%" style="padding: 20px;">
+				<img src="bilder/Certificate_Authority.png" class="center" width="50%">
+				<br>
+				<p class="font"  width="30%" style="padding-bottom: 20px;">Certificate Authority (CA)</p>
+			<td width="50%" style="padding: 20px;">
+				<ul class="font" style="text-align: left;">
+					<li>Hat ein Schlüsselpaar</li>
+					<br>
+					<li>Den Private Key hat nur die CA. selbst</li>
+					<br>
+					<li>Jeder Browser hat eine Liste mit den Public Key's der CA's denen er vertraut.</li>
+				</ul>
+			</td>
+		</tr>
+	</table>
+	<p class="card font">Die Signiture ist mit dem Private Key der CA. verschlüsselt.</p>
+	<p class="card font">Der Browser kann mit dem Public Key aus seiner Liste der Vertrauenswürdigen CA's also die Signature zweifelsfrei entschlüsseln</p>
+	<p class="font card">Wie Funktioniert das ganze in der Praxis?</p>
+	<table class="card"> 
+		<tr>
+			<td width="35%" style="padding: 20px;">
+				<img src="bilder/Client.png" width="90%" class="center">
+			</td>
+			<td width="35%" style="padding: 20px;">
+				<table> 
+					<tr>
+						<td>
+							<img src="bilder/Rechts_Pfeil.png" class="center" width="50%">
+						</td>
+						<td>
+							<img src="bilder/Anfrage.png" class="center" width="100%">
+						</td>
+						<td>
+							<img src="bilder/Rechts_Pfeil.png" class="center" width="50%">
+						</td>
+					</tr>
+				</table>
+			</td>
+			<td width="30%" style="padding: 20px;">
+				<img src="bilder/Server.png" class="center" width="70%">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p class="font">Dein Browser</p>
+			</td>
+			<td>
+				<p class="font">Gib mir YoutTube!</p>
+			</td>
+			<td>
+				<p class="font">www.youtube.com</p>
+			</td>
+		</tr>
+	</table>
+	<p class="card font">Der Client Fragt eine Verbindung mit dem Server an.</p>
+	<table class="card"> 
+		<tr>
+			<td width="35%" style="padding: 20px;">
+				<img src="bilder/Client.png" width="90%" class="center">
+			</td>
+			<td width="35%" style="padding: 20px;">
+				<table> 
+					<tr>
+						<td>
+							<img src="bilder/Links_Pfeil.png" class="center" width="50%">
+						</td>
+						<td>
+							<img src="bilder/Zertifikat.png" class="center" width="110%">
+						</td>
+						<td>
+							<img src="Bilder/Links_Pfeil.png" class="center" width="50%">
+						</td>
+					</tr>
+				</table>
+			</td>
+			<td width="30%" style="padding: 20px;">
+				<img src="bilder/Server.png" class="center" width="70%">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p class="font">Dein Browser</p>
+			</td>
+			<td>
+				<p class="font">Zertifikat</p>
+			</td>
+			<td>
+				<p class="font">www.youtube.com</p>
+			</td>
+		</tr>
+	</table>
+	<p class="font card">Der Server schickt sein SSL Zertifikat zurück.</p>
+	<table class="card font">
+		<tr>
+			<td></td>
+			<td width="30%" style="padding: 20px;">
+				<img src="bilder/Zertifikat.png" class="center" width="50%">
+			</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td width="30%" style="padding: 20px;">
+				<img src="bilder/Runter_Pfeil.png" class="center" width="25%">
+			</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td width="30%" style="padding: 20px;">
+				<img src="bilder/Web_ID.png" class="center" width="50%">
+			</td>
+			<td width="30%" style="padding: 20px;">
+				<img src="bilder/Public_Key.png" class="center" width="50%">
+			</td>
+			<td width="30%" style="padding: 20px;">
+				<img src="bilder/Signature.png" class="center" width="50%">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p class="Font">Identifikation</p>
+			</td>
+			<td>
+				<p class="Font">Public Key</p>
+			</td>
+			<td>
+				<p class="Font">Signature</p>
+			</td>
+		</tr>
+	</table>
+	<p class="card font">Dein Browser weiß jetzt also das www.youtube.com wirklich YouTube ist und hat den Public Key von YouTube</p>
+	<p class="card font">Dein Browser kann mit dem Public Key jetzt alles verschlüsseln, so dass es nur von www.youtube.com mit dem Private Key entschlüsselt werden kann</p>
+	<p class="card font">Dein Browser generiert jetzt einfach einen neuen Schlüssel der sowohl verschlüsseln alsauch entschlüsseln kann und verschlüsselt ihn mit dem Public Key</p>
+	<table class="card"> 
+		<tr>
+			<td width="35%" style="padding: 20px;">
+				<img src="bilder/Client.png" width="90%" class="center">
+			</td>
+			<td width="35%" style="padding: 20px;">
+				<table> 
+					<tr>
+						<td>
+							<img src="bilder/Rechts_Pfeil.png" class="center" width="50%">
+						</td>
+						<td>
+							<img src="bilder/Key.png" class="center" width="100%">
+						</td>
+						<td>
+							<img src="bilder/Rechts_Pfeil.png" class="center" width="50%">
+						</td>
+					</tr>
+				</table>
+			</td>
+			<td width="30%" style="padding: 20px;">
+				<img src="bilder/Server.png" class="center" width="70%">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p class="font">Dein Browser</p>
+			</td>
+			<td>
+				<p class="font">Neuer Geheimschlüssel!</p>
+			</td>
+			<td>
+				<p class="font">www.youtube.com</p>
+			</td>
+		</tr>
+	</table>
+	<p class="font card">Der Client schickt den neuen Schlüssel an den Server</p>
+	<p class="font card">Der Client und Server sind die einzigen zwei Geräte im ganzen Internet mit dem neuen Schlüssel und können damit ihren gesamten Datenverkehr verschlüsseln</p>
 </body>
 </html>
