@@ -4,87 +4,496 @@
 	<link rel="stylesheet" href="style.css" />
 	<title>Benutzerverwaltung</title>
 </head>
-
-<body>
-	<nav>
-		<a href="Info-Praesi_index.html" class="logo">
-					Sicherheit
-		</a>
-		<ul>
-			<li>
-				<a href="ssl.html">
-					SSL
-				</a>
-			</li>
-			<li>
-				<a href="zugriffsrechte.html">
-					Zugriffsrechte
-				</a>
-			</li>
-			<li class="active">
-				<a href="benutzerverwaltung.html">
-					Benutzerverwaltung
-				</a>
-			</li>
-			<li>
-				<a href="schadsoftwares.html">
-					Schadsoftwares
-				</a>
-				<ul>
-					<li>
-						<a href="benutzerperspektive_schadsoftwares.html">
-						Benutzerperspektive
-						</a>
-					</li>
-					<li>
-						<a href="hackerperspektive_schadsoftwares.html">
-							Hackerperspektive
-						</a>
-					</li>
-				</ul>
-			</li>
-		</ul>
-	</nav>
-	<div class="distance background-color">
-	<h1>Benutzerverwaltung</h1>
-	<br>
-		<ul class="distance">
-			<li>verschiedene Tätigkeiten, die die Verwaltung der Benutzer sämtlicher Systeme in einem Unternehmen betreffen</li>
-			<li>Administrator führt diese aus</li>
+	<body>
+		<nav>
+			<ul>
+				<li>
+					<a href="Info-Praesi_index.html" class="logo">
+						<img src="bilder/Praesentation_Icon.png" width="60">
+					</a>
+				</li>
+				<li>
+					<a href="ssl.html">
+						SSL
+					</a>
+				</li>
+				<li class="active">
+					<a href="benutzerverwaltung.html">
+						Benutzerverwaltung
+					</a>
+				</li>
+				<li>
+					<a href="zugriffsrechte.html">
+						Zugriffsrechte
+					</a>
+				</li>
+				<li>
+					<a href="schadsoftwares.html">
+						Schadsoftwares
+					</a>
+					<ul>
+						<li>
+							<a href="benutzerperspektive_schadsoftwares.html">
+							Benutzerperspektive
+							</a>
+						</li>
+						<li>
+							<a href="hackerperspektive_schadsoftwares.html">
+								Hackerperspektive
+							</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<br>
+		<p  class="card font"><em>Heutzutage werden wir oft mit solchen Login fenstern konfrontiert, aber was passiert beim Anmelden eigentlich im Hintergrund?</em></p>
+		<img  src="bilder/login.png" class="card" style="min-width: 94%;">
+		<p class="card font"><em>Nach der Anmeldung habe ich ganz komfortabel zugriff auf alle meine letzten Dokumente, Präsentationen, Mails, Nachrichten und ich werde mit meinem Namen gegrüßt.</em></p>
+		<img  src="bilder/Dashboard.png" class="card" style="max-width: 93.5%;">
+		<br>
+		<p class="card font"><em>Damit das so funktioniert braucht Microsoft eine Menge Daten über Mich:</em></p>
+		<table class="card font" style="min-width: 98%;">
+			<tr>
+				<td  width="50%" style="padding: 20px;">
+					<img src="bilder/User.png" class="center" width="50%">
+					<br>
+					<p class="font"  width="30%" style="padding-bottom: 20px;">Benutzer</p>
+				<td width="50%" style="padding: 20px;">
+					<ul class="font" style="text-align: left;">
+						<li>Meinen Namen</li>
+						<br>
+						<li>Mein Password</li>
+						<br>
+						<li>Meine Dateien </li>
+					</ul>
+				</td>
+			</tr>
+		</table>
+		<p class="card font"><em>Diese Daten zu verwalten ist keine einfache Aufgabe...</em></p>
+		<br>
+		<p class="card font head" >Benutzerverwaltung</p>
+		<table class="card font" style="min-width: 98%;">
+			<tr>
+				<td width="50%" style="padding: 20px;">
+					<img src="bilder/Authentifizierung.png" class="center" width="50%">
+					<br>
+					<p>Authentifikation</p>
+				</td>
+				<td width="50%" style="padding: 20px;">
+					<img src="bilder/Unlock.png" class="center" width="35%">
+					<br>
+					<p>Authorisierung</p>
+				</td>
+			</tr>
+		</table>
+		<p class="card font">Die Authentifikation ist das Überprüfen der vom Benutzer vorgelegten Anmeldeinformationen.</p>
+		<p class="card font">Beim Authorisieren wird dem Benutzer alles auf das er Zugriff hat zugeteilt, wie zb. seine Clouddateien.</p>
+		<br>
+		<p class="card font head">Authentifikation</p>
+		<p class="card font"><em>Man kann sich auf verschiedene Weisen Authentifizieren:</em></p>
+		<table class="card font" style="min-width: 98%;">
+			<tr>
+				<td  width="50%" style="padding: 20px;">
+					<img src="bilder/Authentifizierung.png" class="center" width="50%">
+					<br>
+				<td width="50%" style="padding: 20px;">
+					<ul class="font" style="text-align: left;">
+						<li>Etwas was du weißt<br><b>Passwort</b></li>
+						<br>
+						<li>Etwas was du hast <br><b>Schlüssel</b></li>
+						<br>
+						<li>Etwas was du bist <br><b>Biometrische Daten</b></li>
+					</ul>
+				</td>
+			</tr>
+		</table>
+		<div class="card font">
+			<p>Multifaktorauthentifikation - MFA:</p>
 			<br>
-			<li>Aufgaben:</li>
-				<ul class="distance">
-					<li>schützt IT-Systeme und Daten vor unbefugtem Zugriff</li>
-					<li>identifiziert jeden Benutzer</li>
-					<li>bei Bedarf, Zurücksetzen von Passwörtern</li>
-					<li>vergibt Zugriffsberechtigungen auf Systeme, Services und Anwendungen</li>
-					<li>sperrt und löscht Konten und Berechtigungen</li>
-				</ul>
-		</ul>
+			<p>Oft wird ein Password vom Benutzer abgefragt um ihn zu Authentifizieren. Das ist ein Beispiel für ein-Faktor Authentifikation, kommt <b>weiterer Faktor (oder mehr)</b> wie zb. Biometrische Daten hinzu wird dies <b>Multifaktorauthentifikation</b> genannt.</p>
+		</div>
+		<div class="card font">
+			<p>Single sign on - SSO:</p>
+			<br>
+			<p>Der Benutzer muss sich lediglich <b>einmal</b> anmelden und hat dann Zugriff auf jeglichen Service.</p>
+			<p><em>Bei einem Login auf Google muss der Benutzer sich zb. nicht andauernd neu anmelden weil er von google docs auf sheets wechselt.</em></p>
+		</div>
 		<br>
-		<ol class="distance">
-			<li>lokale(interne) Benutzerverwaltung</li>
-				<ul class="distance">
-					<li>verschlüsselt Zugriffsdaten und legt sie in der internen Datenbank ab</li>
-					<li>Änderungen müssen einzeln in jedem Verzeichnis durchgeführt werden</li>
-					<li>hoher administrativer Aufwand</li>
-				</ul>
+		<p class="card font head">Authorisierung</p>
+		<p class="card font"><em>Eine Authorisierung kann verschiedene Funktionen haben:</em></p>
+		<table class="card font" style="min-width: 98%;">
+			<tr>
+				<td  width="50%" style="padding: 20px;">
+					<img src="bilder/Unlock.png" class="center" width="50%">
+					<br>
+				<td width="50%" style="padding: 20px;">
+					<ul class="font" style="text-align: left;">
+						<li>Pure Identity</li>
+						<li>User Access</li>
+						<li>Service Provision</li>
+						<li>Identity Federation</li>
+					</ul>
+				</td>
+			</tr>
+		</table>
+		<br>
+		<p class="card font head">Pure Identity</p>
+		<table class="card font" style="min-width: 98%;">
+			<th width="25%">Name</th>
+			<th width="25%">Vorname</th>
+			<th width="25%">Wohnohrt</th>
+			<th width="25%">etc.</th>
+			<tr>
+				<td>Müller</td>
+				<td>Max</td>
+				<td>Fikteich Alle</td>
+			</tr>
+			<tr>
+				<td>Linder</td>
+				<td>Lina</td>
+				<td>Hansenberg Alle</td>
+			</tr>
+		</table>
+		<p class="card font">Bei der "Puren Identität" geht es genau darum, um eine Liste in der die Daten von Benutzern einfach nur angelegt sind. Es können Benutzer neu erstellt, gelöscht und ausgelesen werden (so wie oben dagestellt)!</p>
+		<br>
+		<p class="card font head">User Access</p>
+		<table class="card font" style="min-width: 98%;">
+			<th width="20%">Name</th>
+			<th width="20%">Vorname</th>
+			<th width="20%">Wohnohrt</th>
+			<th width="20%">Passwort</th>
+			<th width="20%">etc.</th>
+			<tr>
+				<td>Müller</td>
+				<td>Max</td>
+				<td>Fikteich Alle</td>
+				<td>2h12HiuashI</td>
+			</tr>
+			<tr>
+				<td>Linder</td>
+				<td>Lina</td>
+				<td>Hansenberg Alle</td>
+				<td>23042004</td>
+			</tr>
+		</table>
+		<p class="card font">Der User access erklärt sich schnell, es geht ums anmelden und neben Persönlichen Daten wird zusätzlich zb. ein Passwort zur Authentifikation abgespeichert.</p>
+		<br>
+		<p class="card font head">Service Provision</p>
+		<table class="card font">
+			<th width="20%">Name</th>
+			<th width="20%">Vorname</th>
+			<th width="20%">Wohnohrt</th>
+			<th width="20%">Passwort</th>
+			<th width="20%">Einstellungen</th>
+			<tr>
+				<td>Müller</td>
+				<td>Max</td>
+				<td>Fikteich Alle</td>
+				<td>2h12HiuashI</td>
+				<td>Schriftgröße 12</td>
+			</tr>
+			<tr>
+				<td>Linder</td>
+				<td>Lina</td>
+				<td>Hansenberg Alle</td>
+				<td>23042004</td>
+				<td>Hintergrund Dunkel</td>
+			</tr>
+		</table>
+		<p class="card font">Aber was ist Anmelden ohne Service? Irgendetwas erhofft man sich ja schließlich davon! Deswegen können zb. Benutzereinstellungen für den Benutzer Abgespeichert werden.</p>
+		<p class="card font"><em>Ein Beispiel hierfür sind zb. Social media Giganten die ganz schön viel in dein Benutzerprofil speichern um dir die Besten Videos und die überzeugenste Werbung zu servieren.</em></p>
+		<br>
+		<p class="card font head">Identity Federation</p>
+		<table class="card font">
+			<tr>
+				<td width="33%" style="padding: 20px;">
+					<img src="bilder/Mail.png" class="center" width="50%">
+				</td>
+				<td width="33%" style="padding: 20px;">
+					<img src="bilder/Word.png" class="center" width="35%">
+				</td>
+				<td width="33%" style="padding: 20px;">
+					<img src="bilder/Cloud.png" class="center" width="50%">
+				</td>
+			</tr>
+			<tr>
+				<td>Mail</td>
+				<td>textverarbeitung</td>
+				<td>Cloud</td>
+			</tr>
+		</table>
+		<p class="card font">Wenn ein Unternehmen mehrere Dienste Anbietet braucht jeder einzelne Dienst eine Eigene Datenbank.</p>
+		<table class="card font">
+			<tr>
+				<td width="33%" style="padding: 20px;">
+					<img src="bilder/Mail.png" class="center" width="20%">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<table style="min-width: 98%;">
+						<th width="20%">Name</th>
+						<th width="20%">Vorname</th>
+						<th width="20%">Wohnohrt</th>
+						<th width="20%">Passwort</th>
+						<th width="20%">Einstellungen</th>
+						<tr>
+							<td>Müller</td>
+							<td>Max</td>
+							<td>Fikteich Alle</td>
+							<td>2h12HiuashI</td>
+							<td>Schriftgröße 12</td>
+						</tr>
+						<tr>
+							<td>Linder</td>
+							<td>Lina</td>
+							<td>Hansenberg Alle</td>
+							<td>23042004</td>
+							<td>Hintergrund Dunkel</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<table class="card font">
+			<tr>
+				<td width="33%" style="padding: 20px;">
+					<img src="bilder/Word.png" class="center" width="14%">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<table style="min-width: 98%;">
+						<th width="20%">Name</th>
+						<th width="20%">Vorname</th>
+						<th width="20%">Wohnohrt</th>
+						<th width="20%">Passwort</th>
+						<th width="20%">Einstellungen</th>
+						<tr>
+							<td>Müller</td>
+							<td>Max</td>
+							<td>Fikteich Alle</td>
+							<td>2h12HiuashI</td>
+							<td>Schriftgröße 12</td>
+						</tr>
+						<tr>
+							<td>Linder</td>
+							<td>Lina</td>
+							<td>Hansenberg Alle</td>
+							<td>23042004</td>
+							<td>Hintergrund Dunkel</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<div class="card font" style="text-align: left;">
+			<p>Das ist:</p>
+			<br>
+			<ul  style="padding-left: 5%;">
+				<li>Nervig für Entwickler (Weil sie den selben code für alle Datenbanken einzeln bearbeiten müssen)</li>
 				<br>
-			<li>externe Benutzerverwaltung</li>
-				<ul class="distance">
-					<li>Verwaltung auf einem externen Verzeichnisserver</li>
-					<li>arbeitet mit einer Gruppenstruktur (verschiedene Gruppen enthalten verschiedene Zugriffsrechte, denen Benutzer zugeordnet werden)</li>
-					<li>spart zeit, aber kann unübersichtlich werden</li>
-				</ul>
-		</ol>
+				<li>Nervig für die Benutzer (Weil sie sich überlall andauernd anmelden müssen)</li>
+				<br>
+				<li>Nervig für die Administratoren (Weil sie ganz schön viele zersträute Daten verwalten müssen)</li>
+			</ul>
+		</div>
 		<br>
-		<ul class="distance">
-			<li>manuelle Benutzerverwaltung kann den Datenschutz gefährden</li>
-			<li>Vorgänge müssen exakt gleich durchgeführt werden -> automatisieren</li>
-		</ul>
+		<p class="card font head">Die Lösung!</p>
+		<p class="card font">Mehrere Datenbanken mit unterschiedlichen Funktionen die <b>zusammenarbeiten</b>:</p>
 		<br>
-	<a href="https://www.tenfold-security.com/benutzerverwaltung-user-management/">Mehr Infos hier.</a>
-	</div>	
-</body>
-
+		<p class="card font">Personalien-Datenbank</p>
+		<table class="card font" style="min-width: 98%;">
+			<th width="20%">Name</th>
+			<th width="20%">Vorname</th>
+			<th width="20%">Wohnohrt</th>
+			<tr>
+				<td>Müller</td>
+				<td>Max</td>
+				<td>Fikteich Alle</td>
+			</tr>
+			<tr>
+				<td>Linder</td>
+				<td>Lina</td>
+				<td>Hansenberg Alle</td>
+			</tr>
+		</table>
+		<p class="card font">Anmeldeinformationen-Datenbank</p>
+		<table class="card font" style="min-width: 98%;">
+			<th width="20%">Passwort</th>
+			<th width="20%">Benutzername</th>
+			<tr>
+				<td>2h12HiuashI</td>
+				<td>MueMa4</td>
+			</tr>
+			<tr>
+				<td>23042004</td>
+				<td>LiLi2</td>
+			</tr>
+		</table>
+		<p class="card font">Finanzen-Datenbank</p>
+		<table class="card font" style="min-width: 98%;">
+			<th width="33%">Lohn</th>
+			<th width="33%">Wochenstunden</th>
+			<th width="33%">Überstunden</th>
+			<tr>
+				<td>14.7$</td>
+				<td>20</td>
+				<td>0</td>
+			</tr>
+			<tr>
+				<td>26.84$</td>
+				<td>63</td>
+				<td>13</td>
+			</tr>
+		</table>
+		<p class="card font"> Wenn jetzt ein system bestimmte Daten braucht fragt es einfach die Anderen!</p>
+		<br>
+		<p class="card font"><em>Wie werden diese Datenbanken organisiert?</em></p>
+		<p class="card font"><em>Mit noch einer Datenbank!</em></p>
+		<br>
+		<p class="card font head">Das Metadirectory</p>
+		<table class="card font">
+			<tr>
+				<td  width="50%" style="padding: 20px;">
+					<img src="bilder/Metadirectory.png" class="center" width="50%">
+					<br>
+				<td width="50%" style="padding: 20px;">
+					<p style="text-align: left;">Das Metadirectory ist zwischen alle anderen systeme geschaltet und regelt den Verkehr zwischen ihnen</p>
+				</td>
+			</tr>
+		</table>
+		<p class="card font">Diese anderen Systeme sind unterteilt in <b>Service Provider (SP.) und Identity Provider (IDP.)</b>.</p>
+		<p class="card font">Identity Provider kümmern sich um die <b>Authentifikation</b> des Users.</p>
+		<p class="card font">Service Provider bietem dem nutzer einen Dienst und <b>machen damit einen Großteil der Systeme aus</b>.</p>
+		<p class="card font">Das Zusammenspiel der Service Provider Beruht auf einem <b>Vertrauen</b> zwischen ihnen und dem IDP., denn die SP. sind nicht für die Authentifikation zuständig und müssen auf die korrekte Arbeit des IDP Vertrauen.</p>
+		<table class="card"> 
+			<tr>
+				<td width="35%" style="padding: 20px;">
+					<img src="bilder/User.png" width="90%" class="center">
+				</td>
+				<td width="35%" style="padding: 20px;">
+					<table> 
+						<tr>
+							<td>
+								<img src="bilder/Rechts_Pfeil.png" class="center" width="50%">
+							</td>
+							<td>
+								<img src="bilder/Authentifizierung.png" class="center" width="110%">
+							</td>
+							<td>
+								<img src="Bilder/Rechts_Pfeil.png" class="center" width="50%">
+							</td>
+						</tr>
+					</table>
+				</td>
+				<td width="30%" style="padding: 20px;">
+					<img src="bilder/IdP.png" class="center" width="70%">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p class="font">Benutzer</p>
+				</td>
+				<td>
+					<p class="font">Authentifikation</p>
+				</td>
+				<td>
+					<p class="font">IDP.</p>
+				</td>
+			</tr>
+		</table>
+		<p class="font card">Der Benutzer authentifiziert sich beim Identity Provider.</p>
+		<table class="card"> 
+			<tr>
+				<td width="35%" style="padding: 20px;">
+					<img src="bilder/User.png" width="90%" class="center">
+				</td>
+				<td width="35%" style="padding: 20px;">
+					<table> 
+						<tr>
+							<td>
+								<img src="bilder/Links_Pfeil.png" class="center" width="50%">
+							</td>
+							<td>
+								<img src="bilder/Claim.png" class="center" width="110%">
+							</td>
+							<td>
+								<img src="Bilder/Links_Pfeil.png" class="center" width="50%">
+							</td>
+						</tr>
+					</table>
+				</td>
+				<td width="30%" style="padding: 20px;">
+					<img src="bilder/IdP.png" class="center" width="70%">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p class="font">Benutzer</p>
+				</td>
+				<td>
+					<p class="font">Claim</p>
+				</td>
+				<td>
+					<p class="font">IDP.</p>
+				</td>
+			</tr>
+		</table>
+		<p class="font card">Wenn die Authentifikation erfolgreich ist schickt der Identity Provider einen <b>Access Claim</b> an den Benutzer.</p>
+		<br>
+		<p class="font card"><em>Aber was ist ein Access Claim?</em></p>
+		<p class="font card">Man kann sich einen Access Claim so vorstellen wie Tickets auf dem Jahrmarkt. <b>Der Benutzer nutzt den Claim um sich bei den anderen SP. zu Authentifizieren</b> und muss sich nicht immer wieder an Jedem Stand neue Tickets kaufen.</p>
+		<table class="card"> 
+			<tr>
+				<td width="35%" style="padding: 20px;">
+					<img src="bilder/User.png" width="90%" class="center">
+				</td>
+				<td width="35%" style="padding: 20px;">
+					<table> 
+						<tr>
+							<td>
+								<img src="bilder/Rechts_Pfeil.png" class="center" width="50%">
+							</td>
+							<td>
+								<img src="bilder/Claim.png" class="center" width="110%">
+							</td>
+							<td>
+								<img src="Bilder/Rechts_Pfeil.png" class="center" width="50%">
+							</td>
+						</tr>
+					</table>
+				</td>
+				<td width="30%" style="padding: 20px;">
+					<img src="bilder/Service_Provider.png" class="center" width="70%">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p class="font">Benutzer</p>
+				</td>
+				<td>
+					<p class="font">Access Claim</p>
+				</td>
+				<td>
+					<p class="font">SP.</p>
+				</td>
+			</tr>
+		</table>
+		<p class="font card">Der Benutzer Authentifiziert sich mit einem Access Claim beim Service Provider.</p>
+		<br>
+		<a class="card font center" href="https://www.youtube.com/watch?v=Tcvsefz5DmA">Ein Video zum Thema</a>
+		<table class="card font" style="min-width: 98%;">
+			<tr>
+				<td>
+					<a href="/ssl.html">Vorherige Seite</a>
+				</td>
+				<td>
+					<a href="/benutzerverwaltung.html">Nächste Seite</a>
+				</td>
+			</tr>
+		</table>
+	</body>
 </html>
+		

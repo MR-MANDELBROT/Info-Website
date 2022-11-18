@@ -22,16 +22,20 @@ body{
 }
 .font{
     text-align: center;
-    font-family:monospace; 
+    font-family: monospace; 
     font-size: 20px;
 }
+
 .card{
 	background-color: rgb(255, 255, 255);
     max-width: 98%;
-    min-width: 50%;
+    min-width: 92%;
 	padding: 2%;
     margin: 1%;
 	border-radius: 20px;
+}
+.head{
+    font-size: 25px;
 }
  
  /*Navigationsleiste Aufbau*/
