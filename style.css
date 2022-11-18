@@ -23,7 +23,7 @@ body{
 .font{
     text-align: center;
     font-family: monospace; 
-    font-size: 20px;
+    font-size: 23px;
 }
 
 .card{
@@ -35,7 +35,7 @@ body{
 	border-radius: 20px;
 }
 .head{
-    font-size: 25px;
+    font-size: 27px;
 }
  
  /*Navigationsleiste Aufbau*/
