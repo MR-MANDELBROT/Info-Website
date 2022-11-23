@@ -56,7 +56,7 @@
 		<img class="card" src="bilder/Safari_Schloss.png" style="min-width: 94%;">
 		<p class="card font"><em>Bei vielen Browsern wird in der Suchleiste ein kleines Schloss angezeigt. So sieht das bei mir aus!</em></p>
 		<img class="card" width="93%" src="Bilder/Google_Zertifikat.png" style="min-width: 94%;">
-		<p class="card font"><em>Wenn ich es Anklicke Erscheint ein Banner.</em></p>
+		<p class="card font"><em>Wenn ich es anklicke, erscheint ein Banner.</em></p>
 		<img class="card" width="93%" src="Bilder/Zertifikat_Google-2.png" style="min-width: 94%;">
 		<p class="card font"><em>Hier ist von einem <b>Zertifikat</b> die Rede.</em></p>
 		<br>
@@ -100,7 +100,7 @@
 				</td>
 			</tr>
 		</table>
-		<p class="card font">Ein Zertifikat Setzt sich aus <b>drei Elementen</b> zusammen.</p>
+		<p class="card font">Ein Zertifikat setzt sich aus <b>drei Elementen</b> zusammen.</p>
 		<p class="card font">Die Identifikation enthält Informationen über den Besitzer des Zertifikats, wie zb. den Domainnamen.</p>
 		<br>
 		<p class="card font"><em>Aber was ist so'n Public Key?</em></p>
@@ -148,11 +148,11 @@
 				</td>
 			</tr>
 			<tr>
-				<td>Bei dem Schlüsselpaar handelt es sich um eine <b>Assymetrisch Verschlüssellung</b>.</td>
+				<td>Bei dem Schlüsselpaar handelt es sich um eine <b>Asymetrische Verschlüssellung</b>.</td>
 			</tr>
 		</table>
-		<p class="card font">Das bedeutet alles was der Private Key verschlüsselt kann nur vom Public Key entschlüsselt werden und umgekehrt.</p>
-		<p class="card font">Eine Nachricht die Alice mit dem Public Key Verschlüsselt kann dementsprechent nur von Bob entschlüsselt werden, der den Private Key besitzt.</p>
+		<p class="card font">Das bedeutet alles was der Private Key verschlüsselt, kann nur vom Public Key entschlüsselt werden und umgekehrt.</p>
+		<p class="card font">Eine Nachricht, die Alice mit dem Public Key verschlüsselt, kann dementsprechend nur von Bob entschlüsselt werden, der den Private Key besitzt.</p>
 		<br>
 		<p class="card font"><em>Von wem wird das Zertifikat unterschrieben?</em></p>
 		<p class="card font">Eine Certificate Authority ist für das Unterschreiben der Zertifikate zuständig.</p>
@@ -168,15 +168,15 @@
 						<br>
 						<li>Den Private Key hat nur die CA. selbst</li>
 						<br>
-						<li>Jeder Browser hat eine Liste mit den Public Key's der CA's denen er vertraut</li>
+						<li>Jeder Browser hat eine Liste mit den Public Key's der CA's ,denen er vertraut</li>
 						<br>
-						<li>Jeder kann eine CA eröffnen jedoch muss die CA sich das Vertrauen der Browser erst erarbeiten</li>
+						<li>Jeder kann eine CA eröffnen, jedoch muss die CA sich das Vertrauen der Browser erst erarbeiten</li>
 					</ul>
 				</td>
 			</tr>
 		</table>
-		<p class="card font">Die Signiture ist mit dem Private Key der CA. verschlüsselt.</p>
-		<p class="card font">Der Browser kann mit dem Public Key aus seiner <b>Liste der Vertrauenswürdigen CA's</b> also die Signature zweifelsfrei entschlüsseln.</p>
+		<p class="card font">Die Signature ist mit dem Private Key der CA. verschlüsselt.</p>
+		<p class="card font">Der Browser kann mit dem Public Key aus seiner <b>Liste der vertrauenswürdigen CA's</b> also die Signature zweifelsfrei entschlüsseln.</p>
 		<br>
 		<p class="font card"><em>Wie Funktioniert das ganze in der Praxis?</em></p>
 		<table class="card"> 
@@ -208,14 +208,14 @@
 					<p class="font">Dein Browser</p>
 				</td>
 				<td>
-					<p class="font">Gib mir YoutTube!</p>
+					<p class="font">Gib mir You Tube!</p>
 				</td>
 				<td>
 					<p class="font">www.youtube.com</p>
 				</td>
 			</tr>
 		</table>
-		<p class="card font">Der Client Fragt eine Verbindung mit dem Server an.</p>
+		<p class="card font">Der Client fragt eine Verbindung mit dem Server an.</p>
 		<table class="card"> 
 			<tr>
 				<td width="35%" style="padding: 20px;">
@@ -252,7 +252,7 @@
 				</td>
 			</tr>
 		</table>
-		<p class="font card">Der Server schickt sein SSL Zertifikat zurück.</p>
+		<p class="font card">Der Server schickt sein SSL-Zertifikat zurück.</p>
 		<table class="card font">
 			<tr>
 				<td></td>
@@ -291,9 +291,9 @@
 				</td>
 			</tr>
 		</table>
-		<p class="card font">Dein Browser weiß jetzt <b>wegen der Signature der CA.</b> also das www.youtube.com wirklich YouTube ist und hat den Public Key von YouTube.</p>
-		<p class="card font">Dein Browser kann mit dem Public Key jetzt alles verschlüsseln, so dass es <b>nur</b> von www.youtube.com mit dem Private Key entschlüsselt werden kann.</p>
-		<p class="card font">Dein Browser generiert jetzt einfach einen neuen Schlüssel <b>der sowohl verschlüsseln als auch entschlüsseln kann (Symmetrische Verschlüssellung)</b> und verschlüsselt ihn mit dem Public Key.</p>
+		<p class="card font">Dein Browser weiß jetzt <b>wegen der Signature der CA.</b> also, dass www.youtube.com wirklich YouTube ist und hat den Public Key von YouTube.</p>
+		<p class="card font">Dein Browser kann mit dem Public Key jetzt alles verschlüsseln, sodass es <b>nur</b> von www.youtube.com mit dem Private Key entschlüsselt werden kann.</p>
+		<p class="card font">Dein Browser generiert jetzt einfach einen neuen Schlüssel, <b>der sowohl verschlüsseln als auch entschlüsseln kann (Symmetrische Verschlüssellung)</b> und verschlüsselt ihn mit dem Public Key.</p>
 		<table class="card"> 
 			<tr>
 				<td width="35%" style="padding: 20px;">
